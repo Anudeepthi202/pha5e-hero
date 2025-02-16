@@ -1,9 +1,5 @@
-// script.js
-document.addEventListener("mousemove", (e) => {
-    let floatingElement = document.querySelector(".floating-element");
-    
-    let moveX = (e.clientX / window.innerWidth - 0.5) * 40;
-    let moveY = (e.clientY / window.innerHeight - 0.5) * 40;
-    
-    floatingElement.style.transform = `translate(${moveX}px, ${moveY}px)`;
+// Mouse move effect for floating element
+document.addEventListener("mousemove", function(event) {
+    let floatElement = document.querySelector(".floating-element");
+    floatElement.style.transform = `translate(${event.clientX - 25}px, ${event.clientY - 25}px)`;
 });
