@@ -1,5 +1,7 @@
-// Mouse move effect for floating element
-document.addEventListener("mousemove", function(event) {
-    let floatElement = document.querySelector(".floating-element");
-    floatElement.style.transform = `translate(${event.clientX - 25}px, ${event.clientY - 25}px)`;
+// script.js
+document.addEventListener('mousemove', (e) => {
+  const heroSection = document.querySelector('.hero-section');
+  const x = (window.innerWidth - e.pageX) / 20;
+  const y = (window.innerHeight - e.pageY) / 20;
+  heroSection.style.backgroundPosition = `${x}px ${y}px`;
 });
