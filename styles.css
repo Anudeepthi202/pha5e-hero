@@ -10,7 +10,7 @@ body, html {
 .hero-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   height: 100vh;
   background: linear-gradient(135deg, #6e8efb, #4a6cf7);
   color: white;
